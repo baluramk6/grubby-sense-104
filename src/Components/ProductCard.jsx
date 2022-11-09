@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ item }) => {
   return (
-    <div id={item.id}>
+    <div id={item.id} className="productCard" >
       <img src={item.avatar} />
       <p>{item.name}</p>
       <p>{item.price}</p>
