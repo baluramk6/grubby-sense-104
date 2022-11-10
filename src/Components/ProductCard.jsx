@@ -21,7 +21,20 @@ const ProductCard = ({ item }) => {
         ${item.price}
       </p>
       <div>
-        <button style={{border:"1px solid red", marginBottom: "20px" }}>ADD TO BASKET</button>
+        <button
+          style={{
+            // border: "1px solid red",
+            // marginBottom: "20px",
+            margin: "auto",
+            textAlign: "center",
+            padding:"5px 50px",
+            color: "white",
+            backgroundColor:"rgb(250,166,25)",
+            marginLeft:"30px",
+          }}
+        >
+          ADD TO BASKET
+        </button>
       </div>
     </div>
   );
