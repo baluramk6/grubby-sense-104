@@ -21,14 +21,14 @@ import {
       }
       case GET_PRODUCT_DATA_SUCCESS: {
         return {
-          isLoading: false,
+          isLoading:false,
           products: payload,
         };
       }
   
       case GET_PRODUCT_DATA_FAILURE: {
         return {
-          isLoading: false,
+          isLoading:false,
           products: "",
           isError: true,
         };
