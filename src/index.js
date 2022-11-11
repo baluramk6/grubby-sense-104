@@ -11,7 +11,7 @@ import { UserAuthContextProvider } from "./Context/UserAuthContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <UserAuthContextProvider>
+  // <UserAuthContextProvider>
     <Provider store={store}>
       <BrowserRouter>
         <ChakraProvider>
@@ -19,7 +19,7 @@ root.render(
         </ChakraProvider>
       </BrowserRouter>
     </Provider>
-  </UserAuthContextProvider>
+  //  {/* </UserAuthContextProvider> */}
 );
 
 // If you want to start measuring performance in your app, pass a function

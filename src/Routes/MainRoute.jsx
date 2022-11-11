@@ -9,16 +9,16 @@ import ProtectedRoute from "../Routes/ProtectedRoute";
 const MainRoute = () => {
   return (
     <Routes>
-      <Route
+      {/* <Route
         path="/"
         element={
           <ProtectedRoute>
             <h1>Home Page</h1>
           </ProtectedRoute>
         }
-      />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="/signin" element={<SignIn />} />
+      /> */}
+      {/* <Route path="/signup" element={<SignUp />} />
+      <Route path="/signin" element={<SignIn />} /> */}
       <Route path="/product" element={<Product />} />
       <Route path="/women" element={<Product />} />
       <Route path="/men" element={<ManProduct />} />

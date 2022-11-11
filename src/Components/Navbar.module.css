@@ -47,7 +47,7 @@ position: relative;
 .hover_box>div{
     width: 16.66%;
 }
-.women_box{
+.dropdown_box{
     border: 1px solid yellow;
     height: 100%;
     align-items: center
@@ -57,7 +57,7 @@ position: relative;
     
 }
 
-.women_box:hover .hover_box{
+.dropdown_box:hover .hover_box{
 display: flex;
 }
 .search_box{
