@@ -5,9 +5,7 @@ import MainRoute from './Routes/MainRoute';
 function App() {
   return (
     <div className="App">
-     
-      <Navbar/>
-      <h1>App Page</h1>
+      <Navbar />
       <MainRoute />
     </div>
   );
