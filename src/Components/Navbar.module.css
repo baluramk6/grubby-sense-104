@@ -23,16 +23,60 @@
     border: 1px solid rgb(241, 18, 18);
    
 }
+.option_box{
+    border-right: 1px solid #d7d8d6;
+    /* column-rule: 1px solid #ecedeb; */
+}
+.option_heading{
+    color: #000000;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    transition: ease-in 0.2s;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+.inner_box{
+    margin-top: 20px;
+}
+.option_heading:hover{
+    color: #faa619;
+}
+.option{
+    color: #5d5e5c;
+    cursor: pointer;
+    font-size: 13px;
+    font-style: normal;
+    transition: ease-in 0.1s;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 400;
+    line-height: 18px;
+    transition: ease-in 0.2s;
+    margin-bottom: 2px;
+}
+.option:hover{
+    color: #faa619;
+}
 .navlink_default{
     display: block;
+    font-size: 16px;
+   font-weight: normal;
+   color: #000000;
+
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 .navlink_active{
     /* color: aqua; */
+    color: #faa619;
     display: block;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
-/* .position_ref{
-position: relative;
-} */
+
 .hover_box{
     position: absolute;
     left: 0;
@@ -40,12 +84,12 @@ position: relative;
     top: 100%;
     padding: 20px;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
     display: none;
 }
 .hover_box>div{
-    width: 16.66%;
+    width: 15%;
 }
 .dropdown_box{
     border: 1px solid yellow;
@@ -59,6 +103,7 @@ position: relative;
 
 .dropdown_box:hover .hover_box{
 display: flex;
+justify-content: space-between;
 }
 .search_box{
     border: 1px solid rgb(65, 226, 1);
