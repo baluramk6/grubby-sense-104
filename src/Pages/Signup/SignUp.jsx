@@ -25,7 +25,7 @@ const SignUp = () => {
     <>
       <div className={style.formContainer}>
         <div className={style.formWrapper}>
-          <h1 className={style.heading}>Sign up or Sign in</h1>
+          <h1 className={style.heading}>Sign up</h1>
           <p className={style.formHelpText}>
             Enjoy the convenience of a single account across all participating
             brands
