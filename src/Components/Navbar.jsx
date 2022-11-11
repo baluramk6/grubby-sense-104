@@ -11,9 +11,16 @@ export const Navbar=()=>{
             </div>
             <div className={styles.nav_links}>
                 <div>
-                    <NavLink>Women</NavLink>
+                    <NavLink to={"/product"}>Women</NavLink>
                     <div className="hover_box">
-                     
+                     <div className="1">
+                      
+                     </div>
+                     <div className="2"></div>
+                     <div className="3"></div>
+                     <div className="4"></div>
+                     <div className="5"></div>
+                     <div className="6"></div>
                     </div>
                 </div>
 
