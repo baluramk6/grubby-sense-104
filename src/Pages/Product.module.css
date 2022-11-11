@@ -84,7 +84,7 @@
   color: grey;
 }
 .productdata {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   width: 90%;
   margin: auto;
@@ -95,7 +95,7 @@
   row-gap: 30px;
 }
 .productdata > div {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -135,7 +135,7 @@
   .productdata {
     width: 100%;
     grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: repeat(16, 400px);
+    grid-template-rows: repeat(16, auto);
   }
 }
 /* ==========================================Small Screen============================================================= */
