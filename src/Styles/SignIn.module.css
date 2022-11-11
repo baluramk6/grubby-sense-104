@@ -69,13 +69,26 @@ form > div {
 
 .submitButtonWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.submitButtonWrapper button {
+.submitButtonWrapper button:nth-child(1) {
+  height: 3.5rem;
+  width: 13.5625rem;
+  background-color: #3a83f3;
+  text-align: center;
+  color: white;
+}
+
+.submitButtonWrapper button:nth-child(2) {
   height: 3.5rem;
   width: 13.5625rem;
   background-color: #faad31;
   text-align: center;
   color: white;
+}
+
+.errorMessage {
+  color: red;
 }
