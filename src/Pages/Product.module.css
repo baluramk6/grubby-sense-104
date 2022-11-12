@@ -1,8 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
+
 .productBox {
   border: 1px solid red;
   font-family: Arial, Helvetica, sans-serif;

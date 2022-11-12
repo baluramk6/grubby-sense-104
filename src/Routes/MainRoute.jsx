@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import HomePage from "../Pages/HomePage";
 import ManProduct from "../Pages/ManProduct";
 import Product from "../Pages/Product";
 import SignIn from "../Pages/Signup/SignIn";
@@ -17,6 +18,7 @@ const MainRoute = () => {
           </ProtectedRoute>
         }
       /> */}
+      <Route path="/" element={<HomePage/>}/>
       {/* <Route path="/signup" element={<SignUp />} />
       <Route path="/signin" element={<SignIn />} /> */}
       <Route path="/product" element={<Product />} />
