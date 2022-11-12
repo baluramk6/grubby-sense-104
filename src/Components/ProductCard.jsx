@@ -1,6 +1,15 @@
 import React from "react";
+import CartItem from "../Pages/CartItem";
+import { loadData, saveData } from "../utils/localStorage";
 
 const ProductCard = ({ item }) => {
+  const cart = loadData("cartitem") || [];
+  const cartItemHandle = (item) => {
+    alert("clicked");
+    const newCart = [...cart, item];
+    saveData("cartitem", newCart);
+  };
+
   return (
     <div id={item.id}>
       <img
@@ -27,11 +36,12 @@ const ProductCard = ({ item }) => {
             // marginBottom: "20px",
             margin: "auto",
             textAlign: "center",
-            padding:"5px 50px",
+            padding: "5px 50px",
             color: "white",
-            backgroundColor:"rgb(250,166,25)",
-            marginLeft:"30px",
+            backgroundColor: "rgb(250,166,25)",
+            marginLeft: "30px",
           }}
+          onClick={() => cartItemHandle(item)}
         >
           ADD TO BASKET
         </button>
