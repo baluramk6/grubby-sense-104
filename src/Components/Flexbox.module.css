@@ -22,10 +22,11 @@
 .img_box_cont{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
 }
 .img_box_cont>div{
     width: 15%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .img_box_cont>div>img{
     width: 100%;

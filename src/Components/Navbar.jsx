@@ -17,19 +17,19 @@ export const Navbar=()=>{
                     <div className={styles.dropdown_box}>
                     <NavLink  className={({ isActive }) =>
                   isActive ? styles.navlink_active:   styles.navlink_default
-                } to={"/product"}>Women</NavLink>
+                } to={"/women"}>Women</NavLink>
 
                 <div className={styles.hover_box}>
                      <div className={styles.option_box}>
-                        <div> <NavLink className={styles.option_heading}>Ethnic & Fusion Wear</NavLink></div>
-                       <div><NavLink className={styles.option}>Kurtas & Kurtis</NavLink></div>
-                        <div><NavLink className={styles.option}>Kurta Sets</NavLink></div>
-                        <div> <NavLink className={styles.option}>Ethnic Dresses</NavLink></div>
-                        <div><NavLink className={styles.option}>Tops & Tunics</NavLink></div>
-                        <div><NavLink className={styles.option}>Leggings & Churidars</NavLink></div>
-                        <div> <NavLink className={styles.option}>Pants & Palazzos</NavLink></div>
-                        <div><NavLink className={styles.option}>Skirts</NavLink></div>
-                       <div> <NavLink className={styles.option}>Dupattas & Stoles</NavLink>
+                        <div> <NavLink to={"/women-ethnic-wear"} className={styles.option_heading}>Ethnic & Fusion Wear</NavLink></div>
+                       <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Kurtas & Kurtis</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Kurta Sets</NavLink></div>
+                        <div> <NavLink to={"/women-ethnic-wear"} className={styles.option}>Ethnic Dresses</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Tops & Tunics</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Leggings & Churidars</NavLink></div>
+                        <div> <NavLink to={"/women-ethnic-wear"} className={styles.option}>Pants & Palazzos</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Skirts</NavLink></div>
+                       <div> <NavLink to={"/women-ethnic-wear"} className={styles.option}>Dupattas & Stoles</NavLink>
                      </div>
                     </div>
                     
