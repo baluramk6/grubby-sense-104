@@ -3,7 +3,10 @@ import logo from "../img/logo.png"
 import styles from "./Navbar.module.css"
 
 export const Navbar=()=>{
-    return <div className={styles.nav_main}>
+    
+    return <>
+    <div style={{height:'20px'}}>"</div>
+    <div className={styles.nav_main}>
         <div className={styles.nav_first_section_parent}>
             <div className={styles.logo_box}>
                 <img src={logo} alt="" />
@@ -444,4 +447,5 @@ export const Navbar=()=>{
         </div>
 
     </div>
+    </>
 }

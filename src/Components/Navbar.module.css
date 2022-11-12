@@ -1,11 +1,18 @@
+
 .nav_main{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0px 21px;
     position: relative;
+    box-sizing: inherit;
+    background-color: rgb(247, 248, 247);
+    position: sticky;
+   top: 0; 
+   z-index: 1200;
+    box-shadow: 0 1px 0 0 #ecedeb;
    
 }
 .nav_first_section_parent{
@@ -68,6 +75,9 @@
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
+.navlink_default:hover{
+    color: #faa619;
+}
 .navlink_active{
     /* color: aqua; */
     color: #faa619;
@@ -91,8 +101,10 @@
 .hover_box>div{
     width: 15%;
 }
+
 .dropdown_box{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow;
+    background-color: white; */
     height: 100%;
     align-items: center
     ;
