@@ -2,6 +2,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
 import {
   getProductFailure,
@@ -9,6 +10,7 @@ import {
   getProductSuccess,
 } from "../Redux/AppReducer/action";
 import styles from "./ManProduct.module.css"
+
 
 const ManProduct = () => {
     const dispatch =  useDispatch();
@@ -27,7 +29,7 @@ const ManProduct = () => {
     }, []);
     return (
       <div className={styles.productBox}>
-        <div className={styles.head}> Women</div>
+        <div className={styles.head}> Men</div>
         <div className={styles.filterbox}>
           <div>
             <img
@@ -172,9 +174,9 @@ const ManProduct = () => {
         </div>
         <div className={styles.productdata}>
           {product?.map((el) => (
-            <div key={el.id}>
-              <ProductCard item={el} />
-            </div>
+            <Link to={`/men/${el.id}`}><div key={el.id}>
+            <ProductCard item={el} />
+          </div></Link>
           ))}
         </div>
       </div>

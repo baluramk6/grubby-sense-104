@@ -4,6 +4,8 @@ import ManProduct from "../Pages/ManProduct";
 import Product from "../Pages/Product";
 import SignIn from "../Pages/Signup/SignIn";
 import SignUp from "../Pages/Signup/SignUp";
+import SingleProduct from "../Pages/SingleProduct";
+import SingleProductw from "../Pages/SingleProductw";
 import ProtectedRoute from "../Routes/ProtectedRoute";
 
 const MainRoute = () => {
@@ -22,6 +24,8 @@ const MainRoute = () => {
       <Route path="/product" element={<Product />} />
       <Route path="/women" element={<Product />} />
       <Route path="/men" element={<ManProduct />} />
+      <Route path="/men/:id" element={<SingleProduct />} />
+      <Route path="/women/:id" element={<SingleProductw/>} />
       <Route path="*" element={<h1>Page not found...</h1>} />
     </Routes>
   );
