@@ -1,12 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "../Pages/HomePage";
 import ManProduct from "../Pages/ManProduct";
 import Menpage from "../Pages/Menpage";
 import Product from "../Pages/Product";
 import SignIn from "../Pages/Signup/SignIn";
-import SignUp from "../Pages/Signup/SignUp";
-import Women from "../Pages/Women";
+import SignUp from "../Pages/Signup/SignUp"
 import ProtectedRoute from "../Routes/ProtectedRoute";
 
 const MainRoute = () => {

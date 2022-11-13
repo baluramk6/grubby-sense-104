@@ -1,0 +1,21 @@
+.avatar{
+    display: grid;
+    width:55%;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(2,400px);
+    gap: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.cont{
+display: flex;
+}
+.info{
+    /* border: 1px solid green; */
+    width: 40%;
+    height: 500px;
+    margin-left: 900px;
+    margin-top: -1100px;
+    margin-bottom: 900px;
+    
+}
