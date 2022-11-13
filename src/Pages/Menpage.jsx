@@ -3,39 +3,47 @@ import Banner from '../Components/Banner'
 import Bigbox from '../Components/Bigbox'
 import Carousel from '../Components/carousel/Carousel'
 import Flexbox from '../Components/Flexbox'
-import { deals, ethnicwear_wmn, wmntop_picks, wmn_active_wear, wmn_edtr, wmn_lvd, wmn_spd, wmn_top_trndsngl, wmn_trnd_addon, wmn_wrdrv, wnm_shop_category1, wnm_shop_category2, wnm_trndy_bottomwear, wnm_trnd_brnd1, wnm_trnd_brnd2, wnm_winter } from '../utils/data'
+import { deals,  men_actv_wrdb, men_brnd, men_brnd2, men_brn_dcnt, men_brn_dcnt2, men_crs_img, men_hglt, men_lvd, men_shp_ctgry, men_shp_ctgry2, men_top_pk, men_trndsttr, men_vlu_pk, men_wntr, men_wntr_trnd,wmn_spd, } from '../utils/data'
 
 const Menpage = () => {
   return (
     <div>
-       <Carousel/>
+       <Carousel srcdata={men_crs_img}/>
       <Flexbox heading={"11.11 Deals"} data={deals}/>
-      <Banner src={"https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-modularblock-oneBytwo1A-Women-09Nov2022.gif"}/>   
-         <Banner src={"https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-women-9modblock-StripBanner2-D-08Nov2022.jpg"}/>
-      <Flexbox heading={"Trending Ethnic Wear"} data={ethnicwear_wmn}/>
-      <Bigbox heading={'Top Picks'} data={wmntop_picks}/>
-      <Flexbox heading={'Winterwear Essentials'} data={wnm_winter}/>
+      <Banner src={"https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-12modblock-oneBythree-A-Men-09Nov2022.gif"}/>   
+  
+      <Flexbox heading={"Value Picks"} data={men_vlu_pk}/>
+     
+      <Flexbox heading={'Winterwear Essentials'} data={men_wntr}/>
       <Banner src={'https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-10modblock-oneBythree-A-Women-10Nov2022.jpg'}/>
-      <Banner src={"https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-12modblock-oneBythree-A-StripBanner1-09Nov2022.jpg"}/>
-      <Flexbox heading={'Trendy Bottom Wear'} data={wnm_trndy_bottomwear}/>
+      
+      <Flexbox heading={'Big Brands. Big Discounts'} data={men_brn_dcnt} data2={men_brn_dcnt2}/>
 
-      <Banner heading={'Flash Sale For Today'} src={'https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-women-modularblock1-A-09Nov2022.jpg'}/>
+      <Banner src={'https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-A-menstripbanner-07Nov2022A.png'}/>
 
-      <Flexbox heading={'Shop By Category'} data={wnm_shop_category1} data2={wnm_shop_category2}/>
+      <Banner src={'https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-9modblock-StripBanner2-D-07Nov2022.jpg'}/>
 
-      <Flexbox heading={'Top Trending Brands'} data={wnm_trnd_brnd1} data2={wnm_trnd_brnd2}/>
+      <Banner src={'https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-8modblock-oneBythree-D-10Nov2022.jpg'}/>
 
-      <Bigbox heading={'Activewear Essentials'} data={wmn_active_wear}/>
+      <Flexbox heading={'Shop By Category'} data={men_shp_ctgry} data2={men_shp_ctgry2}/>
 
-      <Flexbox heading={'Top Trending Brands'} data={wmn_top_trndsngl}/>
+      <Flexbox heading={'Top Trending Brands'} data={men_brnd} data2={men_brnd2}/>
 
-      <Flexbox heading={'Trending Add-Ons'} data={wmn_trnd_addon}/>
+      <Banner heading={'Flash Sale for Today'} src={'https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-modularblock7-oneBythree-A-Men-04Nov2022.jpg'}/>
 
-      <Bigbox heading={'Wardrobe Essentials'} data={wmn_wrdrv}/>
+      <Banner heading={'Flash Sale for Today'} src={'https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-modularblock7-oneBythree-A-Men-04Nov2022.jpg'}/>
 
-      <Bigbox heading={'Most Loved Styles'} data={wmn_lvd}/>
+      <Bigbox heading={'Top Picks'} data={men_top_pk}/>
 
-      <Bigbox heading={`Editor's Curated List`} data={wmn_edtr}/>
+      <Bigbox heading={'Winter Trends'} data={men_wntr_trnd}/>
+
+      <Bigbox heading={'Most Loved Styles'} data={men_lvd}/>
+
+      <Bigbox heading={'Highlights of the Day'} data={men_hglt}/>
+
+      <Bigbox heading={'Trendsetters'} data={men_trndsttr}/>
+
+      <Bigbox heading={`Active Wardrobe`} data={men_actv_wrdb}/>
 
       <Bigbox heading={`Shop By Department`} data={wmn_spd}/>
     </div>

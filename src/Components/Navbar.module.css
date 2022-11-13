@@ -17,7 +17,7 @@
 }
 .nav_first_section_parent{
     display: flex;
-    border: 2px solid rgb(0, 2, 148);
+    
 }
 .logo_box{
     width: 40%;
@@ -27,7 +27,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid rgb(241, 18, 18);
    
 }
 .option_box{
@@ -118,8 +117,20 @@ display: flex;
 justify-content: space-between;
 }
 .search_box{
-    border: 1px solid rgb(65, 226, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 31%;
+    padding: 0.3rem;
+    border: 1px solid #ECEDEB;
+    box-shadow: none;
+    border-radius: 2px;
+    background-color: #ecedeb;
+}
+.search_box>input{
+    width: 90%;
+    background: transparent;
+    outline: none;
 }
 .nav_signup_cart_box{
     display: flex;

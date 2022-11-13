@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import {AiOutlineLeft,AiOutlineRight} from 'react-icons/ai'
-import { womencarousel_img } from '../../utils/data'
 import styles from "./Carousel.module.css";
-const Carousel = () => {
+const Carousel = ({srcdata}) => {
     const [data,setData]=useState(0)
     const handleleft_Click=()=>{
         if(data===5){
@@ -36,7 +35,7 @@ const Carousel = () => {
     <div className={styles.Carousel_box}>
         <div onClick={handleleft_Click} className={styles.left_btn}><AiOutlineLeft size={30}/></div>
       <div className={styles.slider_box}>
-        <img src={womencarousel_img[data]} alt="" />
+        <img src={srcdata[data]} alt="" />
       </div>
       <div onClick={handleright_Click} className={styles.right_btn}><AiOutlineRight size={30}/></div>
     </div>

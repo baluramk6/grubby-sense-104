@@ -3,12 +3,12 @@ import Banner from '../Components/Banner'
 import Bigbox from '../Components/Bigbox'
 import Carousel from '../Components/carousel/Carousel'
 import Flexbox from '../Components/Flexbox'
-import { deals, ethnicwear_wmn, wmntop_picks, wmn_active_wear, wmn_edtr, wmn_lvd, wmn_spd, wmn_top_trndsngl, wmn_trnd_addon, wmn_wrdrv, wnm_shop_category1, wnm_shop_category2, wnm_trndy_bottomwear, wnm_trnd_brnd1, wnm_trnd_brnd2, wnm_winter } from '../utils/data'
+import { deals, ethnicwear_wmn, wmntop_picks, wmn_active_wear, wmn_edtr, wmn_lvd, wmn_spd, wmn_top_trndsngl, wmn_trnd_addon, wmn_wrdrv, wnm_shop_category1, wnm_shop_category2, wnm_trndy_bottomwear, wnm_trnd_brnd1, wnm_trnd_brnd2, wnm_winter, womencarousel_img } from '../utils/data'
 
 const Women = () => {
   return (
     <div>
-       <Carousel/>
+       <Carousel srcdata={womencarousel_img}/>
       <Flexbox heading={"11.11 Deals"} data={deals}/>
       <Banner src={"https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-modularblock-oneBytwo1A-Women-09Nov2022.gif"}/>   
          <Banner src={"https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-women-9modblock-StripBanner2-D-08Nov2022.jpg"}/>
