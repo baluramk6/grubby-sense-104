@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./SingleProduct.module.css";
-import {AiFillHeart} from "react-icons/ai"
+import { AiFillHeart } from "react-icons/ai";
 
 const SingleProductw = () => {
   const { id } = useParams();
@@ -115,33 +115,119 @@ const SingleProductw = () => {
           >
             overview
           </p>
-          <p style={{width:"70%", marginLeft:"35px",fontSize:"14px"}}>
+          <p style={{ width: "70%", marginLeft: "35px", fontSize: "14px" }}>
             Add vibrancy to your look and style this winter in this sweatshirt
             featuring a solid hue, a high neckline, and a ribbed hemline.
           </p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Type : High Neck</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Design : Solid</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Sleeve Length : Full Sleeves</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Fabric : Cotton Blend</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Care Instructions : Handwash</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Fit : Regular</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Model Wears : Size M, has Height 6'0" and Chest 38"</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Hemline : Ribbed</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Occasion : Fashion</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Product : Sweatshirt</p>
-          <AiFillHeart style={{marginLeft:"30px",marginTop:"10px"}}></AiFillHeart> 
-          <p style={{marginLeft:"55px",fontSize:"14px",marginTop:"-20px"}}>  Country of Origin : India</p>
-          
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Type : High Neck
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Design : Solid
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Sleeve Length : Full Sleeves
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Fabric : Cotton Blend
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Care Instructions : Handwash
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Fit : Regular
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Model Wears : Size M, has Height 6'0" and Chest 38"
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Hemline : Ribbed
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Occasion : Fashion
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Product : Sweatshirt
+          </p>
+          <AiFillHeart
+            style={{ marginLeft: "30px", marginTop: "10px" }}
+          ></AiFillHeart>
+          <p
+            style={{ marginLeft: "55px", fontSize: "14px", marginTop: "-20px" }}
+          >
+            {" "}
+            Country of Origin : India
+          </p>
+        </div>
+      </div>
+      <div style={{marginLeft:"40px",marginTop:"-260px"}}>
+        <h1 style={{marginBottom:"10px",fontWeight:"bold"}}>Recently Viewed Products</h1>
+        <div>
+          <img
+            src="https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010627472-Blue-Blue-1000010627472_01-2100.jpg"
+            alt=""
+          />
+          <p style={{fontWeight:"bold",marginTop:"10px"}}>Rs. 1500</p>
         </div>
       </div>
     </div>

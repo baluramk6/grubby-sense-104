@@ -144,6 +144,16 @@ const SingleProduct = () => {
           
         </div>
       </div>
+      <div style={{marginLeft:"40px",marginTop:"-260px"}}>
+        <h1 style={{marginBottom:"10px",fontWeight:"bold"}}>Recently Viewed Products</h1>
+        <div>
+          <img
+            src="https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010627472-Blue-Blue-1000010627472_01-2100.jpg"
+            alt=""
+          />
+          <p style={{fontWeight:"bold",marginTop:"10px"}}>Rs. 1500</p>
+        </div>
+      </div>
     </div>
   );
 };
