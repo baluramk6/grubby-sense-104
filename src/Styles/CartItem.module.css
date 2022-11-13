@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.leftContainer {
+  width: 68%;
+  height: fit-content;
+}
+
+.rightContainer {
+  width: 30%;
+  border: 1px solid green;
+}
+
+.headingWrapper {
+  margin: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.0625rem;
+  color: #2d2d2d;
+}
+
+.cardWrapper {
+  width: 100%;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: 0 0 1rem 0;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.subcardWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imageWrapper img {
+  width: 6.25rem;
+  height: fit-content;
+}
+
+.contentWrapper {
+  margin: 0 0 0 1rem;
+}
+
+.contentWrapper h2,
+p {
+  margin: 0 0 1rem 0;
+}
+
+.contentWrapper span {
+  color: gray;
+}
+
+.contentWrapper h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  border-top: 1px solid lightgray;
+  margin-top: 0.5rem;
+}
+
+.buttonWrapper button {
+  width: 100%;
+  color: #faa619;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttonWrapper button:first-child {
+  border-right: 1px solid lightgray;
+}
