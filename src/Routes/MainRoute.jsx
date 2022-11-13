@@ -11,6 +11,7 @@ import Women from "../Pages/Women";
 import CartItem from "../Pages/CartItem";
 import SingleProduct from "../Pages/SingleProduct";
 import SingleProductw from "../Pages/SingleProduct";
+import { Checkout } from "../Components/Checkout/Checkout";
 
 const MainRoute = () => {
   return (
@@ -26,6 +27,7 @@ const MainRoute = () => {
       <Route path="/men/:id" element={<SingleProduct/>}/>
       <Route path="/women-ethnic-wear" element={<Product />} />
       <Route path="/menswear" element={<ManProduct />} />
+      <Route path="/checkout" element={<Checkout/>}/>
       <Route path="*" element={<h1>Page not found...</h1>} />
     </Routes>
   );

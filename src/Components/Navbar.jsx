@@ -2,11 +2,12 @@ import { NavLink } from "react-router-dom"
 import logo from "../img/logo.png"
 import styles from "./Navbar.module.css"
 import {BiSearch} from "react-icons/bi"
+import {HiShoppingBag} from 'react-icons/hi'
+import {AiOutlineHeart} from "react-icons/ai"
 
 export const Navbar=()=>{
     
     return <>
-    <div style={{height:'20px'}}>"</div>
     <div className={styles.nav_main}>
         <div className={styles.nav_first_section_parent}>
             <div className={styles.logo_box}>
@@ -442,10 +443,12 @@ export const Navbar=()=>{
         </div>
 
         <div className={styles.nav_signup_cart_box}>
-       <div>More</div>
-       <div>Signup</div>
-       <div>Logo</div>
-       <div>Logo</div>
+       <div className={styles.navlink_default}>More</div>
+       <div><NavLink to={'/signup'} className={({ isActive }) =>
+                  isActive ? styles.navlink_active:   styles.navlink_default
+                }>Sign Up/ Sign In</NavLink></div>
+       <div><AiOutlineHeart size={25}/></div>
+       <div><NavLink to={'/cartitem'}><HiShoppingBag size={25}/></NavLink></div>
         </div>
 
     </div>
