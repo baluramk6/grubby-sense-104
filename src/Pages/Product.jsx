@@ -171,11 +171,7 @@ const Product = () => {
         </select>
       </div>
       <div className={styles.productdata}>
-        {product?.map((el) => (
-           <Link to={`/women/${el.id}`}><div key={el.id}>
-           <ProductCard item={el} />
-         </div></Link>
-        ))}
+        {product?.map((el) => ( <ProductCard item={el} key={el.id}/>))}
       </div>
     </div>
   );
