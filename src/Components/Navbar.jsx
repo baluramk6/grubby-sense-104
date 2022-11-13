@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import logo from "../img/logo.png"
 import styles from "./Navbar.module.css"
+import {BiSearch} from "react-icons/bi"
 
 export const Navbar=()=>{
     
@@ -17,19 +18,19 @@ export const Navbar=()=>{
                     <div className={styles.dropdown_box}>
                     <NavLink  className={({ isActive }) =>
                   isActive ? styles.navlink_active:   styles.navlink_default
-                } to={"/product"}>Women</NavLink>
+                } to={"/women"}>Women</NavLink>
 
                 <div className={styles.hover_box}>
                      <div className={styles.option_box}>
-                        <div> <NavLink className={styles.option_heading}>Ethnic & Fusion Wear</NavLink></div>
-                       <div><NavLink className={styles.option}>Kurtas & Kurtis</NavLink></div>
-                        <div><NavLink className={styles.option}>Kurta Sets</NavLink></div>
-                        <div> <NavLink className={styles.option}>Ethnic Dresses</NavLink></div>
-                        <div><NavLink className={styles.option}>Tops & Tunics</NavLink></div>
-                        <div><NavLink className={styles.option}>Leggings & Churidars</NavLink></div>
-                        <div> <NavLink className={styles.option}>Pants & Palazzos</NavLink></div>
-                        <div><NavLink className={styles.option}>Skirts</NavLink></div>
-                       <div> <NavLink className={styles.option}>Dupattas & Stoles</NavLink>
+                        <div> <NavLink to={"/women-ethnic-wear"} className={styles.option_heading}>Ethnic & Fusion Wear</NavLink></div>
+                       <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Kurtas & Kurtis</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Kurta Sets</NavLink></div>
+                        <div> <NavLink to={"/women-ethnic-wear"} className={styles.option}>Ethnic Dresses</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Tops & Tunics</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Leggings & Churidars</NavLink></div>
+                        <div> <NavLink to={"/women-ethnic-wear"} className={styles.option}>Pants & Palazzos</NavLink></div>
+                        <div><NavLink to={"/women-ethnic-wear"} className={styles.option}>Skirts</NavLink></div>
+                       <div> <NavLink to={"/women-ethnic-wear"} className={styles.option}>Dupattas & Stoles</NavLink>
                      </div>
                     </div>
                     
@@ -116,19 +117,19 @@ export const Navbar=()=>{
 
                 <div className={styles.dropdown_box}>
                     <div className={styles.dropdown_box}>
-                        <NavLink to={'men'} className={({ isActive }) =>
+                        <NavLink to={'/mens'} className={({ isActive }) =>
                   isActive ? styles.navlink_active:   styles.navlink_default
                 }>Men</NavLink>
 
                         <div className={styles.hover_box}>
                      <div className={styles.option_box}>
-                        <div> <NavLink className={styles.option_heading}>Topwear</NavLink></div>
-                        <div><NavLink className={styles.option}>Casual Shirts</NavLink></div>
-                        <div><NavLink className={styles.option}>Formal Shirts</NavLink></div>
-                        <div> <NavLink className={styles.option}>Polos</NavLink></div>
-                        <div><NavLink className={styles.option}>T-Shirts</NavLink></div>
-                        <div><NavLink className={styles.option}>Jackets</NavLink></div>
-                        <div> <NavLink className={styles.option}>Hoodies & Sweatshirts</NavLink></div>
+                        <div> <NavLink to={'/menswear'} className={styles.option_heading}>Topwear</NavLink></div>
+                        <div><NavLink to={'/menswear'} className={styles.option}>Casual Shirts</NavLink></div>
+                        <div><NavLink to={'/menswear'} className={styles.option}>Formal Shirts</NavLink></div>
+                        <div> <NavLink to={'/menswear'} className={styles.option}>Polos</NavLink></div>
+                        <div><NavLink to={'/menswear'} className={styles.option}>T-Shirts</NavLink></div>
+                        <div><NavLink to={'/menswear'} className={styles.option}>Jackets</NavLink></div>
+                        <div> <NavLink to={'/menswear'} className={styles.option}>Hoodies & Sweatshirts</NavLink></div>
 
                      <div className={styles.inner_box}>
                         <div> <NavLink className={styles.option_heading}>Bottomwear</NavLink></div>
@@ -435,7 +436,8 @@ export const Navbar=()=>{
         </div>
 
         <div className={styles.search_box}>
-            <input type="text" placeholder="write something"/>
+            <BiSearch/>
+            <input type="text" placeholder="What are you looking for?"/>
 
         </div>
 

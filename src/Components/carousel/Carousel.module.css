@@ -1,0 +1,28 @@
+.Carousel_main{
+
+    margin: auto;
+    margin-top: 2.5rem;
+    position: relative;
+}
+.Carousel_box{
+    width: 90%;
+    margin: auto;   
+}
+.slider_box{
+    width: 98%;
+    margin: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.left_btn{
+    cursor: pointer;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+}
+.right_btn{
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+}
